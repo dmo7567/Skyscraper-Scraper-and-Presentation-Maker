@@ -13,7 +13,7 @@ response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 table = soup.find('table', id='table-combined-base')
 
-# Extract table headers
+# Establish Headers
 headers = ['#', 'Building Name', 'City', 'Status', 'Completion', 'Height', 'Floors', 'Material', 'Function']
 
 # Extract table rows
